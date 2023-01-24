@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B O R O N</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+
+<body>
+    <!-- Barra de Navegacion / Menu  -->
+    <nav class="navbar">
+        <!-- Nabvar header -->
+        <header class="navbar-header" id="navbar-header">
+            <a class="bor" href="#">
+                <h1 class="brand">B O R O N</h1>
+                <div class="b">
+                    <img src="./pictures/b.png" alt="B">
+                </div>
+            </a>
+            <button class="navbar-menu-mobile open" id="navbar-menu-mobile">
+                <div class="menu"> Menu <img src="./pictures/menu.png" alt="Menu"></div>
+                <div class="cerrar">Cerrar<img src="./pictures/cruz.png" alt=""></div>
+            </button>
+        </header>
+        <!-- Nabvar container -->
+        <ul class="navbar-container" id="navbar-container">
+            <li class="navbar-item">
+                <a data-scroll href="#top" id="inicio" class="navbar-a navbar-link-active">Acerca de</a>
+            </li>
+            <li class="navbar-item">
+                <a data-scroll href="#about" id="acercaDe" class="navbar-a">Proyectos</a>
+            </li>
+            <li class="navbar-item">
+                <a data-scroll href="#section2" id="section" class="navbar-a">Repositorio</a>
+            </li>
+            <li class="navbar-item">
+                <a data-scroll href="#gallery" id="photos" class="navbar-a">Novedades</a>
+            </li>
+            <li class="navbar-item">
+                <a data-scroll href="#contacto" id="form" class="navbar-a">Contacto</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-a">
+                    <img src="./pictures/lupa1.png" class="lup1" alt="lupa">
+                </a>
+                <a data-scroll href="#contacto" id="form" class="navbar-a"> EN / ES</a>
+            </li>
+            <li class="navbar-item lup">
+                <a class="navbar-a">
+                    <img src="./pictures/lupa.png" class="lupa" alt="lupa">
+                </a>
+            </li>
+            <li class="navbar-item display">
+                <div class="mmb">
+                    <div class="inff">
+                        <p>SUSCRIBETE A NUESTRO NEWSLETER</p>
+                        <img class="flecha" src="./pictures/flecha.png" alt="flecha">
+                    </div>
+                    <img src="./pictures/youtube.png" alt="you">
+                    <img src="./pictures/gorjeo.png" alt="twtt">
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Inocio-->
+    <div class="welcome" id="about">
+        <div class="columns">
+
+            <h1 class="title ">Bienvenidos</h1>
+            <h5 class="text">Desarrollamos y <samp class="subrallado"> promovemos investigacion, </samp>innovacion y
+                divulgacion sobre
+                <u> tecnologia digital</u> y aprendizaje, en <u> Uruguay y America Latina</u>
+            </h5>
+
+        </div>
+    </div>
+    <!-- Sliders  -->
+    <section>
+        <div class="carrusel">
+            <div class="carrusel-items">
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Diseño</h1>
+                    <img src="./pictures/diseño2.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="carrusel">
+            <div id="carrusel2" class="carrusel-items">
+                <div class="carrusel-item">
+                    <h1>Tecnologia</h1>
+                    <img src="./pictures/img1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Innovacion</h1>
+                    <img src="./pictures/img2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Tecnologia</h1>
+                    <img src="./pictures/img1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Innovacion</h1>
+                    <img src="./pictures/img2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Tecnologia</h1>
+                    <img src="./pictures/img1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Innovacion</h1>
+                    <img src="./pictures/img2.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Tecnologia</h1>
+                    <img src="./pictures/img2.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+        <div class="carrusel">
+            <div id="carrusel3" class="carrusel-items">
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru1.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru.jpg" alt="img">
+                </div>
+                <div class="carrusel-item">
+                    <h1>Uruguay</h1>
+                    <img src="./pictures/uru1.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Informacion -->
+    <section class="container" id="gallery">
+        <div class="columns is-multiline">
+            <p>Somos una organisacion autonoma que busca resolver desafios relacionados con
+                el aprendizaje
+                y la mediacion de las tegnologias, a traves de metodologias innovadoras y un abordaje practico, social y
+                participativo.
+            </p>
+        </div>
+    </section>
+    <!-- Noticias -->
+    <div class="media" id="contacto">
+        <div class="green">
+            <h6>NUESTRO ENFOQUE</h6>
+            <P>Esta orientada a problematizar y aportar ideas y soluciones a
+                la implementacion antual y futura de Boron Studio y de otros actores
+                nacionales e internacionales.</P>
+        </div>
+        <div class="img1">
+        </div>
+        <div class="img2">
+        </div>
+        <div class="sliderTwitt">
+            <div id="stwitt">
+                <div class="blue b3">
+                    <H6>SIGUENOS EN TWITTWR</H6>
+                    <img src="./pictures/tw.png" alt="twtter">
+                    <h3>Boronstudio</h3>
+                    <h5>@Boronstudio</h5>
+                    <br>
+                    <p class="min">21hs</p>
+                    <p>📌<samp class="w">#OportunidadLaboral</samp> Lllamado abierto para sumarse al equipo de
+                        <samp class="w"> @Boronstudio</samp> seguimos creciendo y estamos en la busqueda de un nuevo
+                        FRONEND !!!
+                        mas informcion 👉<samp class="w"> http://bit.ly/20oblHS</samp> aplica a la vacante !!!
+                    </p>
+                </div>
+                <div class="blue b2">
+                    <H6>SIGUENOS EN TWITTWR</H6>
+                    <img src="./pictures/tw.png" alt="twtter">
+                    <h3>Estudio_UI</h3>
+                    <h5>@Estudio_UI</h5>
+                    <br>
+                    <p class="min">8hs</p>
+                    <p>📌<samp class="w">#Oportunidad</samp> Nuestros amigos de
+                        <samp class="w"> @Boronstudio</samp> estan en busca de su nuevo FRONEND/UI
+                        mas informcion 👉<samp class="w"> http://bit.ly/20oblHS</samp>
+                    </p>
+                </div>
+                <div class="blue">
+                    <H6>SIGUENOS EN TWITTWR</H6>
+                    <img src="./pictures/tw.png" alt="twtter">
+                    <h3>Boronstudio</h3>
+                    <h5>@Boronstudio</h5>
+                    <br>
+                    <p class="min">2hs</p>
+                    <p>📌<samp class="w">#OportunidadLaboral</samp> Lllamado abierto para sumarse al equipo de
+                        <samp class="w"> @Boronstudio</samp> master digital.👩‍💻👨‍💻
+                        mas informcion 👉<samp class="w"> http://bit.ly/20oblHS</samp>
+                    </p>
+                </div>
+            </div>
+            <div id="flechas">
+                <button class="boton" id="left"> < </button>
+                <button class="boton" id="right"> > </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Repositorio -->
+    <div class="repositorio">
+        <div class="infoRepo">
+            <h1>Repositorio</h1>
+            <div class="dat">
+                <p>repositorio institucionaal de Boron studio</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h6>Autor</h6>
+            <img class="hover" src="./pictures/flecha.png" alt="flecha">
+        </div>
+        <hr>
+        <div>
+            <h6>Titulo</h6>
+
+            <samp id="perro"></samp>
+            <img class="hover" id="imgDog" src="./pictures/flecha.png" alt="flecha">
+
+        </div>
+        <hr>
+        <div>
+            <h6>Lineas de navegacion</h6>
+            <img class="hover" src="./pictures/flecha.png" alt="flecha">
+        </div>
+        <hr>
+        <div>
+            <h6>Descripciones</h6>
+            <img class="hover" src="./pictures/flecha.png" alt="flecha">
+        </div>
+        <hr>
+
+    </div>
+    <!-- Novedades -->
+    <div>
+        <div class="novedades">
+            <h1>Novedades</h1>
+        </div>
+        <div class="infor">
+            <div class="celeste">
+                <div class="recorte">
+                    <div class="recortei"></div>
+                </div>
+                <div class="mas">
+                    <h6>WEBINAR</h6>
+                    <img class="suma" src="./pictures/mas.png" alt="suma">
+                </div>
+                <P>Boron Studio invita a webinar sobre educacion hibrida</P>
+            </div>
+            <div class="green2">
+                <div class="recorte2">
+                    <div class="recortei2"></div>
+                </div>
+                <div class="mas">
+                <h6>EVENTO</h6>
+                 <img  id="suma" src="./pictures/mas.png" alt="suma">
+                </div>
+                <p>Boron Studio invita a webinar sobre educacion hibrida</p>
+            </div>
+            <div class="be">
+                <div class="recorte3">
+                    <div class="recortei3"></div>
+                </div>
+                <div class="mas">
+                    <h6>EVENTO</h6>
+                    <img  class="suma" src="./pictures/mas.png" alt="suma">
+                </div>
+                <p>Boron Studio presenta experiencia de educacion a distancia en Mexico</p>
+            </div>
+            <div class="am">
+                <div class="recorte4">
+                    <div class="recortei4"></div>
+                </div>
+                <div class="mas">
+                    <h6>PUBLICACION</h6>
+                    <img  class="suma" src="./pictures/mas.png" alt="suma">
+                </div>
+                <P>Publicacion de libro "Tecnologia: Lo que puede y no puede hacer la educacion"</P>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footinf">
+            <div>
+                <h1>BORON</h1>
+            </div>
+            <div class="enterate">
+                <h3>Enterate De Las <br> Ultimas Novedades</h3>
+            </div>
+
+            <div class="inff">
+                <p>SUSCRIBETE A NUESTRO NEWSLETER</p>
+                <img src="./pictures/flecha.png" alt="flecha">
+            </div>
+            <div class="infw">
+                <P>info@Boronstudio.com</P>
+                <div>
+                    <img src="./pictures/youtube.png" alt="you">
+                    <img src="./pictures/gorjeo.png" alt="twtt">
+                </div>
+
+            </div>
+            <div class="lista">
+                <ul>
+                    <li>Acerca De</li>
+                    <li>Proyectos</li>
+                    <li>Repositorio</li>
+                    <li>Novedades</li>
+                </ul>
+                <ul>
+                    <li>Contacto</li>
+                    <li>Linea De Investigacion</li>
+                    <li>Informacion Financiera</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="derecho">
+                <p>@2023 Todos lode derechos reservados. Boron studio</p>
+            </div>
+            <div class="by">
+                <p>BY Boron Studio</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // funcion para las img de Novedades //
+
+        function mostrar () {
+        const recorte = document.querySelector(".recorte")
+        const img = document.querySelector(".recortei")
+        const fondo = document.querySelector(".celeste")
+
+        fondo.addEventListener('mousedown', () => {
+            recorte.classList.toggle("imgvision")
+            fondo.classList.toggle("fondo")
+            img.classList.toggle("visionimg")
+        } )
+        }
+        mostrar()
+
+        function mostrar2 () {
+        const recorte2 = document.querySelector(".recorte2")
+        const img2 = document.querySelector(".recortei2")
+        const fondo2 = document.querySelector(".green2")
+
+        fondo2.addEventListener('mousedown', () => {
+            recorte2.classList.toggle("imgvision")
+            fondo2.classList.toggle("fondo")
+            img2.classList.toggle("visionimg")
+        } )
+        }
+        mostrar2()
+
+        function mostrar3 () {
+        const recorte2 = document.querySelector(".recorte3")
+        const img2 = document.querySelector(".recortei3")
+        const fondo2 = document.querySelector(".be")
+
+        fondo2.addEventListener('mousedown', () => {
+            recorte2.classList.toggle("imgvision")
+            fondo2.classList.toggle("fondo")
+            img2.classList.toggle("visionimg")
+        } )
+        }
+        mostrar3()
+
+        function mostrar4 () {
+        const recorte2 = document.querySelector(".recorte4")
+        const img2 = document.querySelector(".recortei4")
+        const fondo2 = document.querySelector(".am")
+
+        fondo2.addEventListener('mousedown', () => {
+            recorte2.classList.toggle("imgvision")
+            fondo2.classList.toggle("fondo")
+            img2.classList.toggle("visionimg")
+        } )
+        }
+        mostrar4()
+
+    </script>
+    <script>
+        // Script de la Barra de Navegacion al hacer Scroll //
+        window.addEventListener("scroll", function () {
+            const nav = document.querySelector("nav")
+            const navlist = document.querySelector(".navbar-container")
+            const bot = document.querySelector(".navbar-menu-mobile")
+            nav.classList.toggle("abajo", window.scrollY > 0)
+            bot.classList.toggle("bot", window.scrollY > 0)
+            navlist.classList.toggle("abajo2", window.scrollY > 0)
+        }) 
+    </script>
+    <script src="./maiin.js"></script>
+</body>
+
+</html>
