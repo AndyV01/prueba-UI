@@ -25,58 +25,64 @@ function imgPerro() {
 }
 imgPerro();
 
+  // funciones para las img de Novedades //
 
-// funciones del sliders //
+  function mostrar () {
+    const recorte = document.querySelector(".recorte")
+    const img = document.querySelector(".recortei")
+    const fondo = document.querySelector(".celeste")
 
-const carrusel = document.querySelector(".carrusel-items");
+    fondo.addEventListener('mousedown', () => {
+        recorte.classList.toggle("imgvision")
+        fondo.classList.toggle("fondo")
+        img.classList.toggle("visionimg")
+    } )
+    }
+    mostrar()
 
-let maxScrollLeft = carrusel.scrollWidth - carrusel.clientWidth;
-let intervalo = null
-let step = 1
-const start = () => {
-    intervalo = setInterval(function () {
-        carrusel.scrollLeft = carrusel.scrollLeft + step;
-        if (carrusel.scrollLeft === maxScrollLeft) {
-            step = step * -1
-        }
-    }, 10)
-}
+    function mostrar2 () {
+    const recorte2 = document.querySelector(".recorte2")
+    const img2 = document.querySelector(".recortei2")
+    const fondo2 = document.querySelector(".green2")
 
-start();
+    fondo2.addEventListener('mousedown', () => {
+        recorte2.classList.toggle("imgvision")
+        fondo2.classList.toggle("fondo")
+        img2.classList.toggle("visionimg")
+    } )
+    }
+    mostrar2()
 
-const carrusel2 = document.querySelector("#carrusel2")
+    function mostrar3 () {
+    const recorte2 = document.querySelector(".recorte3")
+    const img2 = document.querySelector(".recortei3")
+    const fondo2 = document.querySelector(".be")
+
+    fondo2.addEventListener('mousedown', () => {
+        recorte2.classList.toggle("imgvision")
+        fondo2.classList.toggle("fondo")
+        img2.classList.toggle("visionimg")
+    } )
+    }
+    mostrar3()
+
+    function mostrar4 () {
+    const recorte2 = document.querySelector(".recorte4")
+    const img2 = document.querySelector(".recortei4")
+    const fondo2 = document.querySelector(".am")
+
+    fondo2.addEventListener('mousedown', () => {
+        recorte2.classList.toggle("imgvision")
+        fondo2.classList.toggle("fondo")
+        img2.classList.toggle("visionimg")
+    } )
+    }
+    mostrar4()
 
 
-let maxScrollLeft2 = carrusel2.scrollWidth - carrusel2.clientWidth
-const start2 = () => {
-    intervalo = setInterval(function () {
-        carrusel2.scrollLeft = carrusel2.scrollLeft + step;
-        if (carrusel2.scrollLeft === maxScrollLeft2) {
-            step = step * -1
-        }
-
-    }, -5)
-}
-
-start2()
-
-const carrusel3 = document.querySelector("#carrusel3")
-
-
-let maxScrollLeft3 = carrusel3.scrollWidth - carrusel3.clientWidth
-const start3 = () => {
-    intervalo = setInterval(function () {
-        carrusel3.scrollLeft = carrusel3.scrollLeft + step;
-        if (carrusel3.scrollLeft === maxScrollLeft3) {
-            step = 1
-        }
-
-    }, 8)
-}
-
-start3()
 
 // Funcion para el slider de Noticias //
+
 const slider = document.querySelector("#stwitt")
 let sliderSection = document.querySelectorAll(".blue")
 let sliderSectionLast = sliderSection[sliderSection.length - 1]

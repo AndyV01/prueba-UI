@@ -69,7 +69,7 @@
         </ul>
     </nav>
     <!-- Inocio-->
-    <div class="welcome" id="about">
+    <main class="welcome" id="about">
         <div class="columns">
 
             <h1 class="title ">Bienvenidos</h1>
@@ -79,7 +79,7 @@
             </h5>
 
         </div>
-    </div>
+    </main>
     <!-- Sliders  -->
     <section>
         <div class="carrusel">
@@ -115,32 +115,32 @@
             </div>
         </div>
         <div class="carrusel">
-            <div id="carrusel2" class="carrusel-items">
-                <div class="carrusel-item">
+            <div class="carrusel-items2">
+                <div class="carrusel-item2">
                     <h1>Tecnologia</h1>
                     <img src="./pictures/img1.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Innovacion</h1>
                     <img src="./pictures/img2.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Tecnologia</h1>
                     <img src="./pictures/img1.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Innovacion</h1>
                     <img src="./pictures/img2.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Tecnologia</h1>
                     <img src="./pictures/img1.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Innovacion</h1>
                     <img src="./pictures/img2.jpg" alt="img">
                 </div>
-                <div class="carrusel-item">
+                <div class="carrusel-item2">
                     <h1>Tecnologia</h1>
                     <img src="./pictures/img2.jpg" alt="img">
                 </div>
@@ -190,7 +190,7 @@
         </div>
     </section>
     <!-- Noticias -->
-    <div class="media" id="contacto">
+    <article class="media" id="contacto">
         <div class="green">
             <h6>NUESTRO ENFOQUE</h6>
             <P>Esta orientada a problematizar y aportar ideas y soluciones a
@@ -247,7 +247,7 @@
             </div>
         </div>
 
-    </div>
+    </article>
     <!-- Repositorio -->
     <div class="repositorio">
         <div class="infoRepo">
@@ -376,63 +376,8 @@
         </div>
     </footer>
     <script>
-        // funcion para las img de Novedades //
-
-        function mostrar () {
-        const recorte = document.querySelector(".recorte")
-        const img = document.querySelector(".recortei")
-        const fondo = document.querySelector(".celeste")
-
-        fondo.addEventListener('mousedown', () => {
-            recorte.classList.toggle("imgvision")
-            fondo.classList.toggle("fondo")
-            img.classList.toggle("visionimg")
-        } )
-        }
-        mostrar()
-
-        function mostrar2 () {
-        const recorte2 = document.querySelector(".recorte2")
-        const img2 = document.querySelector(".recortei2")
-        const fondo2 = document.querySelector(".green2")
-
-        fondo2.addEventListener('mousedown', () => {
-            recorte2.classList.toggle("imgvision")
-            fondo2.classList.toggle("fondo")
-            img2.classList.toggle("visionimg")
-        } )
-        }
-        mostrar2()
-
-        function mostrar3 () {
-        const recorte2 = document.querySelector(".recorte3")
-        const img2 = document.querySelector(".recortei3")
-        const fondo2 = document.querySelector(".be")
-
-        fondo2.addEventListener('mousedown', () => {
-            recorte2.classList.toggle("imgvision")
-            fondo2.classList.toggle("fondo")
-            img2.classList.toggle("visionimg")
-        } )
-        }
-        mostrar3()
-
-        function mostrar4 () {
-        const recorte2 = document.querySelector(".recorte4")
-        const img2 = document.querySelector(".recortei4")
-        const fondo2 = document.querySelector(".am")
-
-        fondo2.addEventListener('mousedown', () => {
-            recorte2.classList.toggle("imgvision")
-            fondo2.classList.toggle("fondo")
-            img2.classList.toggle("visionimg")
-        } )
-        }
-        mostrar4()
-
-    </script>
-    <script>
         // Script de la Barra de Navegacion al hacer Scroll //
+
         window.addEventListener("scroll", function () {
             const nav = document.querySelector("nav")
             const navlist = document.querySelector(".navbar-container")
