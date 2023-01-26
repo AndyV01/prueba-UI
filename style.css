@@ -96,7 +96,7 @@
   width: 100%;
   background-color: #7fe397;
   text-align: left;
-  padding: 118px 80px;
+  padding: 127px 80px;
   position: absolute;
   overflow: hidden;
  }
@@ -629,6 +629,7 @@ footer li {
   }
   .headerBlack .brand{
     color: white;
+    font-size: 23px;
   }
   .cerrar{
     padding: 0 !important;
@@ -666,6 +667,18 @@ footer li {
     height: 450px;
     margin-left: 0;
     padding-left: 4em;
+  }
+  .show .lup1{
+    padding: 0;
+  }
+  .navbar-a{
+    padding-right: 4em;
+  }
+  .show .display{
+    width: 100%;
+  }
+  .mmb{
+    padding-right: 5em;
   }
   /*Inicio*/
   .title{
@@ -711,10 +724,16 @@ footer li {
     width: 100%;
     text-align: center;
   }
+  #perro{
+    margin-left: 30%;
+  }
   /* Novedades */
   .infor{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, auto);
+  }
+  .novedades h1{
+    font-size: 3rem;
   }
   /* Footer */
   .footinf{
@@ -732,6 +751,8 @@ footer li {
     padding: 0;
   }
   li{
+    display: flex;
+    justify-content: space-between;
     padding-left: 0 !important;
   }
   .enterate{
